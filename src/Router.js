@@ -3,14 +3,14 @@ import DogDetails from "./DogDetails";
 import DogList from "./DogList";
 
 // TODO: DogList is essentially our homepage
-function Router(){
+function Router({dogList}){
     return (
         <Switch>
           <Route exact path="/dogs" >
-            <DogList />
+            <DogList dogList={dogList}/>
           </Route>
           <Route exact path="/dogs/:name" >
-            <DogDetails /> 
+            <DogDetails dogList={dogList}/> 
           </Route>
           <Redirect to="/dogs" />
         </Switch>
