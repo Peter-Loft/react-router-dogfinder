@@ -1,10 +1,13 @@
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
+import Router from './Router';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Good luck!</h1>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
