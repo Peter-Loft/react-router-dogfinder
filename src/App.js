@@ -18,9 +18,6 @@ function App() {
     listLoader();
   }
 
-  console.log("This is the dogList", dogList)
-
-
   return (
     <BrowserRouter>
       <Router dogList={dogList}/>

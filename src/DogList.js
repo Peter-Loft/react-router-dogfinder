@@ -24,7 +24,7 @@ function DogList({ dogList }) {
   return (
     <div className="DogList">
       {dogList.map(dog =>
-        <div>
+        <div key={dog.name}>
           {dog.name}
           <Link to={"/dogs/"+dog.name}>
             <img src={dog.src + ".jpg"} alt={dog.name}></img>

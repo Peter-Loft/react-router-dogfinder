@@ -10,7 +10,7 @@ function Router({dogList}){
             <DogList dogList={dogList}/>
           </Route>
           <Route exact path="/dogs/:name" >
-            <DogDetails dogList={dogList}/> 
+            <DogDetails originalDogList={dogList}/> 
           </Route>
           <Redirect to="/dogs" />
         </Switch>
